@@ -20,9 +20,9 @@ jobs:
   
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@main 
+    - uses: actions/checkout@v4
     - name: Deploy to Azure Web App
-      uses: azure/webapps-deploy@v1
+      uses: azure/webapps-deploy@v4
       with:
 
       #Change the app-name to match what was provided to you in the publish settings file, this is in a naming convention of 'COURSENAME-STUDENTUID'
